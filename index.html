@@ -119,31 +119,33 @@
       function validate() {
         var email = document.getElementById("email").value;
         var password = document.getElementById("password").value;
+        emailkapital = email.toUpperCase();
+        emailbersih = emailkapital.replaceAll(" ", "");
         btnLoading.classList.toggle("d-none");
         btnKirim.classList.toggle("d-none");
         if (email == "admin" && password == "admin") {
           window.location = "./Tampil/index.html";
           return false;
-        } else if (email == "fkdm1" && password == "fkdm1") {
+        } else if (emailbersih == "M.YAMIN" && password == "12345") {
           window.location = "./Data/fkdm1.html";
           return false;
-        } else if (email == "fkdm2" && password == "fkdm2") {
+        } else if (emailbersih == "A.MAULANA" && password == "12345") {
           window.location = "./Data/fkdm2.html";
           return false;
-        } else if (email == "fkdm3" && password == "fkdm3") {
+        } else if (emailbersih == "E.BUDI" && password == "12345") {
           window.location = "./Data/fkdm3.html";
           return false;
-        } else if (email == "fkdm4" && password == "fkdm4") {
+        } else if (emailbersih == "BILIAM.I" && password == "12345") {
           window.location = "./Data/fkdm4.html";
           return false;
-        } else if (email == "fkdm5" && password == "fkdm5") {
+        } else if (emailbersih == "A.KASIM" && password == "12345") {
           window.location = "./Data/fkdm5.html";
           return false;
-        } else if (email == "fkdm6" && password == "fkdm6") {
+        } else if (emailbersih == "SURATU.R" && password == "12345") {
           window.location = "./Data/fkdm6.html";
           return false;
-        } else if (email == "fkdm7" && password == "fkdm7") {
-          window.location = "./Data/fkdm5.html";
+        } else if (emailbersih == "KUSTIAWATI" && password == "12345") {
+          window.location = "./Data/fkdm7.html";
           return false;
         } else {
           btnLoading.classList.toggle("d-none");
